@@ -3,74 +3,112 @@
 <head>
     <title>Pandahouse Showreel</title>
     <style>
+        :root {
+            --header-height: 10vh;
+            --footer-height: 10vh;
+            --content-height: 80vh;
+        }
+
         body {
             background-color: #181818;
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+
+        .header {
+            display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            font-family: 'Indie Flower', cursive;
+            width: 100%;
+            height: var(--header-height);
         }
 
-        .logo {
-            position: absolute;
-            top: 87px;
-            left: 901px;
-            width: 122px;
-            height: 112px;
+        .header img {
+            max-width: 100%;
+            max-height: 100%;
         }
 
-        .showreel {
-            position: absolute;
-            top: 305px;
-            left: 396px;
-            width: 1133px;
-            height: 636px;
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: var(--content-height);
         }
 
-        .text {
-            position: absolute;
-            top: 300.57px;
-            left: 1566.23px;
-            width: 154.91px;
-            height: 181.32px;
-            font-size: 49.34px;
-            color: #94bb81;
+        .content iframe {
+            max-width: 90%;
+            max-height: 90%;
         }
 
-        .instagram {
-            position: absolute;
-            top: 984px;
-            left: 1462px;
-            width: 57px;
-            height: 57px;
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: var(--footer-height);
+            padding: 0 10%;
+            box-sizing: border-box;
+            flex-wrap: wrap;
         }
 
-        .contacts {
-            position: absolute;
-            top: 973.11px;
-            left: 1551.96px;
-            width: 340.35px;
-            height: 81.77px;
-            font-size: 16.42px;
+        .footer p {
             color: #ffffff;
+            flex-grow: 1;
+        }
+
+        .footer a img {
+            max-width: 50px;
+            max-height: 50px;
+        }
+
+        @media (max-width: 600px) {
+            :root {
+                --header-height: 20vh;
+                --footer-height: 20vh;
+                --content-height: 60vh;
+            }
+
+            .footer {
+                flex-direction: column;
+            }
+
+            .footer p {
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .footer a img {
+                max-width: 25px;
+                max-height: 25px;
+            }
         }
     </style>
 </head>
 <body>
-    <img class="logo" src="https://raw.githubusercontent.com/rafparopandahouse/rafparopandahouse.github.io/main/PANDAHOUSE_LOGO_02_BIANCO.png" />
-    <iframe class="showreel" src="https://player.vimeo.com/video/833045922" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-    <p class="text">Lights<br>Camera<br>Action!</p>
-    <a href="https://www.instagram.com/pandahouseproductions/">
-        <img class="instagram" src="https://raw.githubusercontent.com/rafparopandahouse/rafparopandahouse.github.io/main/CIS-A2K_Instagram_Icon_(Black).svg.png" />
-    </a>
-    <p class="contacts">
-        Diego Perrone - pandahouse.prod@gmail.com<br>
-        Carola Saino - carolapandahouse@gmail.com<br>
-        Raffaello Parodi - raffaellopandahouse@gmail.com<br>
-        Flavio Pizzagalli - flaviopandahouse@gmail.com
-    </p>
+    <div class="header">
+        <img src="https://raw.githubusercontent.com/rafparopandahouse/rafparopandahouse.github.io/main/PANDAHOUSE_LOGO_02_BIANCO.png" />
+    </div>
+
+    <div class="content">
+        <iframe src="https://player.vimeo.com/video/833045922" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="footer">
+        <p>
+            Diego Perrone - pandahouse.prod@gmail.com<br>
+            Carola Saino - carolapandahouse@gmail.com<br>
+            Raffaello Parodi - raffaellopandahouse@gmail.com<br>
+            Flavio Pizzagalli - flaviopandahouse@gmail.com
+        </p>
+        <a href="https://www.instagram.com/pandahouseproductions/">
+            <img src="https://raw.githubusercontent.com/rafparopandahouse/rafparopandahouse.github.io/main/CIS-A2K_Instagram_Icon_(Black).svg.png" />
+        </a>
+    </div>
 </body>
 </html>
