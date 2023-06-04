@@ -10,53 +10,94 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: space-between;
             height: 100vh;
             margin: 0;
             padding: 0;
+            overflow: hidden;
+        }
+
+        .logo-section {
+            flex: 1;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            width: 100%;
+            padding: 20px;
         }
 
         .logo {
-            width: 60%;
-            max-width: 600px;
-            margin-bottom: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .video-section {
+            flex: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
         }
 
         .video {
-            width: 80%;
-            max-width: 800px;
-            margin-bottom: 20px;
+            width: 90%;
+            height: 80%;
+        }
+
+        .text-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            width: 100%;
+            padding: 20px;
         }
 
         .text {
             color: #94bb81;
             text-align: center;
-            margin-bottom: 20px;
+        }
+
+        .contact {
+            color: #ffffff;
+            text-align: center;
         }
 
         .instagram {
-            width: 10%;
+            width: 20%;
             max-width: 100px;
             margin-bottom: 20px;
         }
 
-        .email {
-            text-align: center;
+        @media only screen and (max-width: 768px) {
+            .text, .contact {
+                font-size: small;
+            }
+            .instagram {
+                width: 30%;
+            }
         }
     </style>
 </head>
 <body>
-    <img class="logo" src="https://raw.githubusercontent.com/rafparopandahouse/rafparopandahouse.github.io/main/PANDAHOUSE_LOGO_02_BIANCO.png">
-    <iframe class="video" src="https://player.vimeo.com/video/833045922" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-    <p class="text">Lights<br>Camera<br>Action!</p>
-    <a href="https://www.instagram.com/pandahouseproductions/">
-        <img class="instagram" src="https://raw.githubusercontent.com/rafparopandahouse/rafparopandahouse.github.io/main/CIS-A2K_Instagram_Icon_(Black).svg.png">
-    </a>
-    <p class="email">
-        Diego Perrone - pandahouse.prod@gmail.com<br>
-        Carola Saino - carolapandahouse@gmail.com<br>
-        Raffaello Parodi - raffaellopandahouse@gmail.com<br>
-        Flavio Pizzagalli - flaviopandahouse@gmail.com
-    </p>
+    <div class="logo-section">
+        <img class="logo" src="https://raw.githubusercontent.com/rafparopandahouse/rafparopandahouse.github.io/main/PANDAHOUSE_LOGO_02_BIANCO.png">
+    </div>
+    <div class="video-section">
+        <iframe class="video" src="https://player.vimeo.com/video/833045922" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <div class="text-section">
+        <p class="text">Lights<br>Camera<br>Action!</p>
+        <a href="https://www.instagram.com/pandahouseproductions/">
+            <img class="instagram" src="https://raw.githubusercontent.com/rafparopandahouse/rafparopandahouse.github.io/main/CIS-A2K_Instagram_Icon_(Black).svg.png">
+        </a>
+        <p class="contact">
+            Diego Perrone - pandahouse.prod@gmail.com<br>
+            Carola Saino - carolapandahouse@gmail.com<br>
+            Raffaello Parodi - raffaellopandahouse@gmail.com<br>
+            Flavio Pizzagalli - flaviopandahouse@gmail.com
+        </p>
+    </div>
 </body>
 </html>
