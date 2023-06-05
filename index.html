@@ -14,10 +14,16 @@
             font-family: 'Indie Flower', cursive;
         }
 
-        .logo {
+        .header-wrapper {
             position: absolute;
-            top: 87px;
-            left: 901px;
+            top: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
             width: 150px; /* Increased the size of the logo */
             height: auto; /* Maintain aspect ratio */
         }
@@ -62,7 +68,9 @@
     </style>
 </head>
 <body>
-    <img class="logo" src="https://raw.githubusercontent.com/rafparopandahouse/rafparopandahouse.github.io/main/PANDAHOUSE_LOGO_02_BIANCO.png" />
+    <div class="header-wrapper">
+        <img class="logo" src="https://raw.githubusercontent.com/rafparopandahouse/rafparopandahouse.github.io/main/PANDAHOUSE_LOGO_02_BIANCO.png" />
+    </div>
     <iframe class="showreel" src="https://player.vimeo.com/video/833045922" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     <p class="text">Lights<br>Camera<br>Action!</p>
     <div class="contact-wrapper">
