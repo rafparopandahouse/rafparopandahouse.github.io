@@ -18,8 +18,8 @@
         }
 
         .logo {
-            width: 150px; /* Increased the size of the logo */
-            height: auto; /* Maintain aspect ratio */
+            width: 150px;
+            height: auto;
             margin-top: 50px;
         }
 
@@ -31,9 +31,11 @@
         }
 
         .showreel {
-            width: 1133px;
-            height: 636px;
-            margin-right: 20px; /* Added a little margin to separate the two elements */
+            width: 80%; /* Changed to be responsive */
+            height: 0; /* 0 height to establish an aspect ratio */
+            padding-bottom: 45%; /* Establishes aspect ratio of 16:9 */
+            margin-right: 20px;
+            background: #000;
         }
 
         .text {
@@ -59,6 +61,23 @@
         .contacts {
             font-size: 16.42px;
             color: #ffffff;
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+
+            .showreel {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .text {
+                text-align: center;
+                font-size: 30px; /* Smaller font size for mobile */
+            }
         }
     </style>
 </head>
