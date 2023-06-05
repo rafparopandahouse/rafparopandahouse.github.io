@@ -17,34 +17,27 @@
             font-family: 'Indie Flower', cursive;
         }
 
-        .logo {
-            width: 150px;
-            height: auto;
+        .logo-text-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin-top: 50px;
         }
 
-        .showreel-wrapper {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            width: 1133px;
-            height: 636px;
-        }
-
-        .showreel {
-            width: 100%;
-            height: 100%;
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
         }
 
         .text {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 154.91px;
-            height: 181.32px;
-            font-size: 49.34px;
+            font-size: 24px; /* Adjusted font size to fit next to the logo */
             color: #94bb81;
+        }
+
+        .showreel {
+            width: 1133px;
+            height: 636px;
         }
 
         .contact-wrapper {
@@ -70,11 +63,11 @@
     </style>
 </head>
 <body>
-    <img class="logo" src="https://raw.githubusercontent.com/rafparopandahouse/rafparopandahouse.github.io/main/PANDAHOUSE_LOGO_02_BIANCO.png" />
-    <div class="showreel-wrapper">
-        <iframe class="showreel" src="https://player.vimeo.com/video/833045922?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <div class="logo-text-wrapper">
+        <img class="logo" src="https://raw.githubusercontent.com/rafparopandahouse/rafparopandahouse.github.io/main/PANDAHOUSE_LOGO_02_BIANCO.png" />
         <p class="text">Lights<br>Camera<br>Action!</p>
     </div>
+    <iframe class="showreel" src="https://player.vimeo.com/video/833045922?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     <div class="contact-wrapper">
         <a href="https://www.instagram.com/pandahouseproductions/" target="_blank">
             <img class="instagram" src="https://raw.githubusercontent.com/rafparopandahouse/rafparopandahouse.github.io/main/CIS-A2K_Instagram_Icon_(Black).svg.png" />
